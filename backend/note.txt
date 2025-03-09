@@ -1,0 +1,60 @@
+=>create a backend folder
+=>cd backend 
+=>npm init -y  //used to create the package.json file in the backend...
+=>npm i express //by using this command the express js(node modules) will get installed in the backend ...
+=>npm i nodemon //it will automaticlly restart the server
+// alter in the package.json  
+"scripts": {
+    "start":"node App.jsx",
+    "dev":"nodemon App.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+
+=>npm i cors frontend purpose
+=>npm i dotenv--do all the necessory in the app.jsx like join dir
+=>connect the config.env file in the App.jsx
+
+
+
+=>connect the server using express method listen() 
+
+
+
+
+
+=>create the routes and the controller folder in the backend folder
+=>inside the routes create individual files like order.jsx and product.jsx
+=>inside then import the express and create router and make a routes for getallProduct and getsingleProduct inside them pass the controller function don't forget to import the controller files
+=>create the controller the files like productController.jsx and orderController.jsx write the logical codes like getallProduct and getsingleProduct  
+exports.getProducts=async (req,res,next)=>
+{ 
+   res.json(
+    {
+        success:true,
+        message:'get product!!!',
+        products
+    }
+   )
+} first write this for testing then we will connect the database
+
+=>import the routes
+=>use the link app.use('api/v1',products); this will be combine with the http://localhost:3000/api/v1
+=>in the App.jsx write the middleware like app.use(express.json()),app.use(cors()); cors is used for the frontend purpose
+=>test it using the postman
+
+
+
+
+
+=>npm i mongoose --for connecting mongodb with app.jsx
+=>create connectDatabase.jsx in the config folder create the env variable for the db_url from the mongobd copy the link address
+=>import the connectDatabase.jsx to the App.jsx then call the funtion of connectDatabase();
+
+
+=>create models and schemas
+=>create individual schemas for product and order of the mongodb
+=>import these models in the individual controllers then we will use in the controller function based on the requirement
+
+=>learn ...
+
+

@@ -1,0 +1,55 @@
+=>first create frontend folder
+
+=>cd frontend
+
+=>npm create vite@latest
+
+=>clear the unnecessory code in index.css,App.jsx
+
+=>get the static templates for the ecom
+
+=>import the bootstrap or some css in the index.html header
+
+=>import the style.css in the app.css from the templates -->in that use ctrl+f to replace the class to className
+
+=>next step is to import the images to the public folder in the react
+
+=>then copy the main body codes like nav,section,footer to the App.jsx
+
+=>create the new folders like components,pages in the src
+
+=>then divide the code split for the use of header,footer,home
+
+=>create the header.jsx and footer.jsx components in the 
+components folder beacause it will be used rapidly
+
+=>create home.jsx write the section code
+
+=>import the Header,Home,footer in the App.jsx
+
+=>copy the product code from home.jsx convert to a single product of the code then create the productCard.jsx in the componenets and write those code in the ProductCard.jsx
+
+=>then import the ProductCart.jsx in the Home.jsx
+
+=>then go to the backend folder and install npm i cors and import it in the App.jsx of the backend
+
+=>run the backend simultanously
+
+=>create an env file in the frontend -->*before giving any env values we have to use VITE_  eg:VITE_API_URL
+
+=>create the usestate of the product with empty array in the Home.jsx
+
+=>create useEffect and fetch the get product details check the response use the env for the server address
+
+=>make little changes in the ProductCard.jsx to make it dynamic use the map() method inside it write the ProductCard tag pass the props
+
+=>then go to ProductCard.jsx get the props convert the static data to the dynamic 
+
+=>install the npm i react-router-dom
+
+=>import react-router-dom make the Header,Home,footer inside the 
+router
+
+=>then import the Link from the react-router-dom whenever click some content like product name or view details it will go to the next page of the website
+
+=>learn more...
